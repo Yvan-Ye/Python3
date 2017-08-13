@@ -1,0 +1,25 @@
+download python3 from python official website
+设置环境变量-->对于Windows环境来说
+1、下载python安装包。
+
+　　下载地址：https://www.python.org/
+
+2、配置环境变量
+
+　　找到python的安装路径。C:\Python27;script的路径：C:\Python27\Scripts;配置到环境变量。
+
+　　配置环境变量步骤：1.My Computer→Advanced system settings→Advanced→Environment Variables→Path 复制进去即可
+
+3、打开命令提示符： win+R ,输入 cmd 。输入 python ，回车。显示python的版本信息就表明安装成功。如图所示：
+
+4、Sublime Text 3 python 配置
+
+　　1.通过快捷键 ctrl+` 或者 View > Show Console 打开控制台，然后粘贴相应的 Python 安装代码；
+
+　　2.Sublime Text 3 安装代码并回车：
+
+import urllib.request,os; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); open(os.path.join(ipp, pf),'wb').write(urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ','%20')).read())
+
+　　3.重启Sublime Text 3；
+
+　　4.如果在Perferences->package settings中看到package control这一项，则安装成功。
